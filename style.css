@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 1100px;
+    height: 447px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -223px;
+    margin-left: -550px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.info{
+    padding: 4em 5em;
+}
+
+.info h1{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Lexend Deca', sans-serif;
+    letter-spacing: 0.05em;
+}
+
+#main-p{
+    color: hsla(0, 0%, 100%, 0.6);
+    margin: 2em 0;
+    font-family: 'Inter', sans-serif;
+    text-align: justify;
+    padding-right: 2em;
+}
+
+.numbers{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6em;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    padding-right: 1em;
+
+
+}
+
+.numbers p{
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.numbers h3{
+    font-size: 1.5em;
+}
+
+#purple{
+    color: hsl(277, 64%, 61%);
+}
+
+.photo img{
+    mix-blend-mode: multiply;
+    opacity: 0.8; 
+}
+
+.photo{
+    background-color: hsl(277, 64%, 61%);
+    display: flex;
+    align-items: stretch;
+}
+
+#img-mob{
+    display: none;
+}
+
+.attribution{
+    color: white;
+}
+@media (max-width: 375px) {
+    body{
+        font-size: 10px;
+    }
+    .container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        max-width: 280px;
+        margin: 25px auto;
+        height: 100%;
+        position: static;
+        text-align: center;
+    }
+    .info{
+        padding: 3em;
+    }
+    #main-p{
+        text-align: center;
+        margin: 1em 0;
+        font-size: 1.2em;
+        padding: 0;
+    }
+   
+    #img-mob{
+        display: flex;
+        max-width: 100%;
+    }
+    #img-des{
+        display: none;
+    }
+
+    .numbers{
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    .number:not(:last-child){
+        padding-bottom: 2em;
+    }
+
+
+}
+
+
